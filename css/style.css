@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,7 +38,6 @@ body {
 .navbar__item {
   display: inline-block;
   margin-right: 5px;
-  padding: 1rem;
   list-style: none;
   transition: background-color 0.3s;
   cursor: pointer;
@@ -48,6 +48,8 @@ body {
 }
 
 .link {
+  display: block;
+  padding: 1.3rem;
   font-size: 1.3rem;
   text-decoration: none;
   color: #ecf0f1;
@@ -56,4 +58,47 @@ body {
 .title {
   font-size: 3.7em;
   color: #ecf0f1;
+}
+
+.wrapper__container {
+  min-height: 100vh;
+}
+
+.subtitle {
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+  text-align: right;
+  font-size: 2.5rem;
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+.column__four {
+  padding: 1rem;
+  line-height: 1.9rem;
+  column-gap: 40px;
+  column-count: 4;
+  column-rule: 5px solid cadetblue;
+  background-color: #f7f1e3;
+}
+
+.column__two {
+  padding: 1rem;
+  line-height: 1.9rem;
+  column-gap: 20px;
+  column-count: 2;
+  column-rule: 10px solid cadetblue;
+}
+
+.footer {
+  display: flex;
+  column-count: 2;
+}
+
+.container__date {
+  padding: 1.2em;
+  width: 100%;
+  background-color: #34495e;
 }
